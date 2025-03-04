@@ -35,6 +35,10 @@
         "heading",
         "button"
       ],
+      "custom_css": [
+        ".scroll-trigger:not(.scroll-trigger--offscreen).animate--fade-in {opacity: 0.1; animation: var(--animation-fade-in);}",
+        ".banner--desktop-transparent .banner__box {z-index: 2;}"
+      ],
       "settings": {
         "image_overlay_opacity": 40,
         "image_height": "large",
@@ -64,7 +68,7 @@
     "video_pCEmEg": {
       "type": "video",
       "custom_css": [
-        ".section-template--23987203866911__video_pCEmEg-padding{z-index:1; margin-top:-300px;}"
+        ".section-template--23987203866911__video_pCEmEg-padding {z-index: 1; margin-top: -700px;}"
       ],
       "settings": {
         "heading": "",
