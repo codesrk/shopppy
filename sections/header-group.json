@@ -38,12 +38,12 @@
     "header": {
       "type": "header",
       "settings": {
-        "logo_position": "middle-center",
-        "menu": "",
+        "logo_position": "top-center",
+        "menu": "main-menu",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-374df3fc-1f2f-48ab-8824-72368a8d7b60",
         "menu_color_scheme": "scheme-1",
         "enable_country_selector": true,
         "enable_language_selector": true,
@@ -51,15 +51,6 @@
         "margin_bottom": 0,
         "padding_top": 20,
         "padding_bottom": 20
-      }
-    },
-    "custom_liquid_7bPVm4": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "{%- liquid\n      if section.settings.menu != blank\n        if section.settings.menu_type_desktop == 'dropdown'\n          render 'header-dropdown-menu'\n        elsif section.settings.menu_type_desktop != 'drawer'\n          render 'header-mega-menu'\n        endif\n      endif\n    %}",
-        "color_scheme": "scheme-3",
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     },
     "announcement-bar": {
@@ -93,7 +84,6 @@
   "order": [
     "announcement_bar_VxDW6a",
     "header",
-    "custom_liquid_7bPVm4",
     "announcement-bar"
   ]
 }
