@@ -11,13 +11,64 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
+    "announcement_bar_VxDW6a": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_9HdWqC": {
+          "type": "announcement",
+          "settings": {
+            "text": "Free Shipping & Gift Lon all orders above $75 USD",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_9HdWqC"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1a97a67b-bc00-49eb-8e86-9ed060d4d479",
+        "show_line_separator": true,
+        "show_social": false,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "logo_position": "middle-center",
+        "menu": "",
+        "menu_type_desktop": "dropdown",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
+        "color_scheme": "scheme-3",
+        "menu_color_scheme": "scheme-1",
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "custom_liquid_7bPVm4": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{%- liquid\n      if section.settings.menu != blank\n        if section.settings.menu_type_desktop == 'dropdown'\n          render 'header-dropdown-menu'\n        elsif section.settings.menu_type_desktop != 'drawer'\n          render 'header-mega-menu'\n        endif\n      endif\n    %}",
+        "color_scheme": "scheme-3",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
+            "text": "30 Days Money Back Guarantee",
             "link": ""
           }
         }
@@ -37,28 +88,12 @@
         "enable_country_selector": false,
         "enable_language_selector": false
       }
-    },
-    "header": {
-      "type": "header",
-      "settings": {
-        "logo_position": "middle-left",
-        "menu": "main-menu",
-        "menu_type_desktop": "dropdown",
-        "sticky_header_type": "on-scroll-up",
-        "show_line_separator": true,
-        "color_scheme": "scheme-1",
-        "menu_color_scheme": "scheme-1",
-        "enable_country_selector": true,
-        "enable_language_selector": true,
-        "mobile_logo_position": "center",
-        "margin_bottom": 0,
-        "padding_top": 20,
-        "padding_bottom": 20
-      }
     }
   },
   "order": [
-    "announcement-bar",
-    "header"
+    "announcement_bar_VxDW6a",
+    "header",
+    "custom_liquid_7bPVm4",
+    "announcement-bar"
   ]
 }
