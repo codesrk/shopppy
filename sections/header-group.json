@@ -26,10 +26,10 @@
         "announcement-bar-0"
       ],
       "custom_css": [
-        "section.announcement-bar{color: #323232 !important;background: linear-gradient(350deg, rgba(211, 249, 241, 1) 15%, rgba(153, 214, 201, 1) 84%) !important;}"
+        "section.announcement-bar {color: #323232 !important; background: linear-gradient( 350deg, rgba(211, 249, 241, 1) 15%, rgba(153, 214, 201, 1) 84% ) !important;}"
       ],
       "settings": {
-        "color_scheme": "scheme-5",
+        "color_scheme": "scheme-1a97a67b-bc00-49eb-8e86-9ed060d4d479",
         "show_line_separator": true,
         "show_social": false,
         "auto_rotate": false,
