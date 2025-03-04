@@ -63,6 +63,9 @@
     },
     "video_pCEmEg": {
       "type": "video",
+      "custom_css": [
+        ".section-template--23987203866911__video_pCEmEg-padding{z-index:1; margin-top:-300px;}"
+      ],
       "settings": {
         "heading": "",
         "heading_size": "h2",
